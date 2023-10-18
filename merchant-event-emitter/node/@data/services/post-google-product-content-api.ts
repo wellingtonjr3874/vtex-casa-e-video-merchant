@@ -4,7 +4,7 @@ import { google } from "googleapis"
 import { GoogleAuth } from 'google-auth-library';
 // import { IGetAppSettings } from "./iget-app-settings";
 
-const MERCHANT_ID = "227410284";
+const MERCHANT_ID = "8941422";
 // const APP_SETTINGS = process.env.VTEX_ACCOUNT! + process.env.VTEX_APP_ID!
 
 export class PostGoogleProductContentApi implements IPostGoogleProduct {
