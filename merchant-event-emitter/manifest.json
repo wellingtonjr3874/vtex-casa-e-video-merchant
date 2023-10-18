@@ -1,0 +1,68 @@
+{
+  "name": "merchant-event-emitter",
+  "vendor": "casaevideonewio",
+  "version": "0.0.4",
+  "title": "Events Example",
+  "description": "Reference app for VTEX IO Services",
+  "dependencies": {
+    "vtex.search-graphql": "0.x",
+    "vtex.search-resolver": "0.x"
+  },
+  "builders": {
+    "node": "6.x",
+    "docs": "0.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "www.googleapis.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "shoppingcontent.googleapis.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "vbase-read-write"
+    }
+  ],
+  "settingsSchema": {
+    "title": "Google OAuth",
+    "type": "object",
+    "properties": {
+      "private_key": {                                                      
+        "title": "Key",
+        "type": "string",
+        "default": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC19TxRoEQeUkor\ndjiExpBytEBG03So4km44jbc0gmwUKDQZj6wWEoV4u7iD6tmQE1Po1NIcW1+z7P6\nKpPEvseiQuF4FBQmcuaTqmSganLqa/s1IyTJoAWZSX9WHz237npUZnjEV5A1hH4v\nxP3dcARyEtcxwjkc5s+jME1+sIueZ7IRYY1Lmsk3prilP8D8JeRQijphyprq2h2d\niD3Xso2C1K5QAFmsaomi1+Zw8Hf+lOhAcHRsRIwVE2dLx4lmFw6PGTF1UUVEEpWv\nH8g0DF4iCn95BCEkPlRjAwAl2pyEN9h+vz83mBkXuvvaYo1okh4cdwV7KFVc7ClC\nRq9BjP+tAgMBAAECggEACyTDa/BXxk+d2+mNQ+cb7kUccU9T+V/adKiOBETCHnqM\nTsG5nHfbxFlgmJcDFUEM5bqynWDXpt42PzT1AHtP+J+wn/etgD6l4RdHZbep5VzK\n8Wcp7UXlRzeuxRR8EClac+l5WJ+lj6bXSjpTSIjVYjMbMMtHT34nQJmdtWDp5r/d\nMXHrg3WLkX27e5J6T/pFeFpb7Q/W5fNQ3WZXggEq7doK/k2CGaus903l6C+6Fv3q\nWJqJDg8poZqnhEEvGIDR8UH+xD7TnsU+SsroyOkLC1GJNRsc/cITPy0tooOM+Y6H\n/3wUZBeeU+PuXI//zSfiEDhLhy3/ICZ8luK934ADwQKBgQDnxr/c1OaYr9aufC1Q\nqy7az1AheD7GQquR3YnwfCAZJ3gCd94IHXSToXYt0EWDJgYx4iW2FSztvkX9l7cy\ncffak5OOxGSBVP5GrZdyjVyu5nF6yUUtCtV1QGYWZwR/vsqMx4/P1F3R9b+xYb1h\nVSU1dgOkcu2ZjBGXsFn3aYn8sQKBgQDI+ZQgrLk6Aq4m3TzXBNXyvL8bkHUl6E/J\nw6iFa9tyW210sXis0bZfRLOlfNMJVoFnI565SOXCuyJ4H7nOvCtLERAlugd0w3YK\nPyIY/A8ViZZkFbaHMF3xfQdgnMPRevCRAM5d4Qw+MSqfVW+M/lVsSjLuxKaXR9UD\n0o6tHOzBvQKBgQDBLZ82UOCNvGkjbu5aAQOBbi8sZktz9ZeIcOyKWvpp3MKi1ANk\nIiDK91VHpAJ759Jb+1BRLd8PnHo7fhs72U+qhzwCT2Axh4STphXHbVklkX5dx6l3\nfEMjgfRUkbJnQr8RjTcpEqjL2ZbXIk609EGaCG3Kv9uXEe6Lznl9xCI1UQKBgBzx\nRFHITgx6olXaeo6ElcMVR3hSv2wsHoFx+ezs8XdwjzzE6hoJQXhKzoxAg6vOl2gh\nCxSn2N7IUFh4SSvqkVmIJYkpVzWLiI5FNUXf1tRFMjFLpzOk1YKXfN5+9PxP9iEL\nuqxuYnL6Zab4iM4HOooTzW3xSAR1Rcn9IqrvhXEJAoGAQTDnEKOI7WWXUGKOro2Y\nFg9vi9TPf9WQzuDvXnbfCW90ASXNQkGjKuV3v21lVYKmXuPAcGZVUitd8fGzxzTf\n9iJFzem/IhsXchY9nRqJMqyZYE01F/MKhR7yjWEEvr5iIiMNZ0C4lTGdycrRDTmD\nonr/kmJ6v+rOgBFGqGUHSVE=\n-----END PRIVATE KEY-----\n"
+      },
+      "client_email": {
+        "title": "Email do client",
+        "type": "string",
+        "default": "merchant-center-1691409606367@merchant-center-1691409606367.iam.gserviceaccount.com"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
