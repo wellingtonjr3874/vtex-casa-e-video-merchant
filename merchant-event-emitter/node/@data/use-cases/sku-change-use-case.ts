@@ -28,8 +28,7 @@ export class SkuChangeUseCase implements ISkuChangeUseCase {
     if (!res) {
       throw new SkuNotExist(item.IdSku)
     }
-
-    const productEntity = new Product({ product: res, selectedSku: item.IdSku, sellerId: item.SellerChain, vendorAccount: item.An });
+    const productEntity = new Product({ product: res, selectedSku: item.IdSku, sellerId: item.SellerChain, vendorAccount: "casaevideo"  });
     const productGoogleWithAdapter = productGoogleAdapter(productEntity, productEntity.getPrice());
     await this.postProductMerchant.execute(productGoogleWithAdapter);
     return
