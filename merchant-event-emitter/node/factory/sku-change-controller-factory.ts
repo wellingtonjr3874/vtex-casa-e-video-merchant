@@ -1,4 +1,4 @@
-import { EventContext, JanusClient } from "@vtex/api";
+import { EventContext } from "@vtex/api";
 import { Clients } from "../clients";
 import { SkuChangeUseCase } from "../@data/use-cases/sku-change-use-case";
 // import { SkuChangeUseCase } from "../@data/use-cases/sku-change-use-case-with-product";
