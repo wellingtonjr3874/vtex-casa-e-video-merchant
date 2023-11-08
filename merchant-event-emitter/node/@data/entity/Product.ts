@@ -66,7 +66,7 @@ export class Product {
     }
     this.id = selecteDefaultSku.itemId;
     this.offerId = this.getOfferId(product.productId, selecteDefaultSku.itemId);
-    this.title = selecteDefaultSku.name
+    this.title = selecteDefaultSku.nameComplete
     this.description = product.description.replace(/\s+/g, ' ').trim()
     this.product_type = this.getProductCategory(product.categories);
     this.image_link = this.getImageLink(selecteDefaultSku);
