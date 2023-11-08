@@ -6,7 +6,7 @@
   "devDependencies": {
     "@types/co-body": "0.0.3",
     "@types/node": "12.x",
-    "@vtex/api": "6.45.24",
+    "@vtex/api": "6.46.0",
     "@vtex/tsconfig": "0.5.6",
     "typescript": "3.9.7",
     "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context"
